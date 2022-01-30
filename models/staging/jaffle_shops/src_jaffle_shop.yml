@@ -1,0 +1,10 @@
+version: 2
+
+sources: 
+    -   name: jaffle_shop
+        database: app-radar-333220
+        schema: dbt_nsfeir
+        tables:
+            - name: shop_customers
+            - name: shop_orders
+            - name: stripe_payments
