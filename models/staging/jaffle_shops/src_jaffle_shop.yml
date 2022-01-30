@@ -2,9 +2,15 @@ version: 2
 
 sources: 
     -   name: jaffle_shop
+        description: a clone of a postgres application DB
         database: app-radar-333220
         schema: dbt_nsfeir
         tables:
             - name: shop_customers
+              description: Raw customers data
             - name: shop_orders
+              description: Raw orders data
+              columns:
+                - name: id
+                  description: This is the order id which is unique (Primary Key)
             - name: stripe_payments
